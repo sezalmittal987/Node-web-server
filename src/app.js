@@ -2,6 +2,7 @@ const express=require('express')
 const path=require('path')
 const hbs=require('hbs')
 const app=express()
+const port=process.env.PORT || 2000
 
 const request=require('request')
 const geocode=require('./utils/geocode.js')
@@ -70,4 +71,4 @@ app.get('*',(req,res)=>{
         name:'Sezal',
         errorMessage:'Page not found'})
 })
-app.listen(2000,()=>{console.log('server is up on port 2000')})
+app.listen(port,()=>{console.log('server is up on port'+port)})
