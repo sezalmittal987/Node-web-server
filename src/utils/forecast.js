@@ -7,7 +7,7 @@ if(error){
 }else if(body.error){
 callback('Unable to find location',undefined)
 }else{
-callback(undefined, 'It is currently '+body.currently.temperature+'degress out.There is a '+body.currently.precipProbability+'chances of raining')
+callback(undefined, 'It is currently '+body.currently.temperature+'degress out.There is a '+body.currently.precipProbability+' chances of raining.Humidity is '+body.currently.humidity +'.')
 
 }})}
 
